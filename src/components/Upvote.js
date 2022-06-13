@@ -61,6 +61,6 @@ export default function Upvote(props) {
   }
 
   return (
-      <button onClick={() => handleClick(word)}>{!thumbsClicked ? <HandThumbsUp /> : < HandThumbsUpFill />}</button>
+      <button onClick={() => handleClick(word)}>{!thumbsClicked ? <HandThumbsUp color="black" /> : < HandThumbsUpFill color="black" />}</button>
   )
 }

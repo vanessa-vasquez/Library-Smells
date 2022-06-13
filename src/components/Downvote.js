@@ -61,6 +61,6 @@ export default function Downvote(props) {
   }
 
   return (
-      <button onClick={() => handleClick(word)}>{!thumbsClicked ? <HandThumbsDown /> : < HandThumbsDownFill />}</button>
+      <button onClick={() => handleClick(word)}>{!thumbsClicked ? <HandThumbsDown color="black" /> : < HandThumbsDownFill color="black" />}</button>
   )
 }

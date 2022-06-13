@@ -1,13 +1,14 @@
 .select-header{
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: 'Comic Neue', cursive;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
 .options{
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: 'Comic Neue', cursive;
     border-style: solid;
     border-radius: 10px;
+    border-width: 1px;
     height: auto;
     padding: 10px;
 }
@@ -24,7 +25,11 @@ ul li:hover{
 /* Medium size screens and bigger */
 @media only screen and (min-width: 768px) {
     .select-header{
-        font-size: 30px;
+        font-size: 40px;
+    }
+
+    .options{
+        font-size: 20px;
     }
 }
 

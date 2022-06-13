@@ -4,20 +4,21 @@
 
 #add-descriptor{
     margin-top: 10px;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-}
+    font-family: 'Comic Neue', cursive;}
 
 .descriptors-header{
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: 'Comic Neue', cursive;
     font-size: 20px;
 }
 
 .descriptors-list{
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: 'Comic Neue', cursive;
     width: 100%;
     height: 400px;
     padding: 10px 20px 10px 20px;
     border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
     overflow: scroll;
 }
 
