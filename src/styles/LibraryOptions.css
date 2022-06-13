@@ -1,0 +1,40 @@
+.select-header{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.options{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    border-style: solid;
+    border-radius: 10px;
+    height: auto;
+    padding: 10px;
+}
+
+ul{
+    line-height: 30px;
+}
+
+ul li:hover{
+    font-weight: bold;
+    cursor: grab;
+}
+
+/* Medium size screens and bigger */
+@media only screen and (min-width: 768px) {
+    .select-header{
+        font-size: 30px;
+    }
+}
+
+/* Extra small size screens */
+@media only screen and (max-width: 575px) {
+    .select-header{
+        font-size: 20px;
+    }
+
+    .options{
+        font-size: 15px;
+    }
+}

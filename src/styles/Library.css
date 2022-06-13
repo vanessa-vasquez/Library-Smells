@@ -1,0 +1,29 @@
+.home-page {
+    background-image: url("../assets/smelly-background.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Medium size screens and bigger */
+@media only screen and (min-width: 768px) {
+    .name, .smell-rating{
+        font-family: 'Barriecito', cursive;
+        font-size: 40px;
+    }
+
+    .smell-rating{
+        float: right;
+    }
+}
+
+/* Extra small size screens */
+@media only screen and (max-width: 575px) {
+    .name, .smell-rating{
+        font-family: 'Barriecito', cursive;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

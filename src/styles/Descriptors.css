@@ -1,0 +1,63 @@
+#descriptor {
+    width: 100%;
+}
+
+#add-descriptor{
+    margin-top: 10px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.descriptors-header{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 20px;
+}
+
+.descriptors-list{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    width: 100%;
+    height: 400px;
+    padding: 10px 20px 10px 20px;
+    border-style: solid;
+    overflow: scroll;
+}
+
+.word{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thumbs-icons{
+    display: flex;
+}
+
+.thumbs-icons button{
+    font-size: 25px;
+    border-style: none;
+    background-color: transparent;
+}
+
+.thumbs-icons button:hover{
+    transform: scale(1.1);
+}
+
+/* Medium size screens and bigger */
+@media only screen and (min-width: 768px) {
+    .descriptors-list{
+        font-size: 40px;
+    }
+}
+
+/* Extra small size screens */
+@media only screen and (max-width: 575px) {
+    .descriptors-list{
+        font-size: 25px;
+    }
+
+    .descriptors-header{
+        text-align: center;
+    }
+}
+
+
+
