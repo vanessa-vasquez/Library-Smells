@@ -1,66 +1,76 @@
-import { React, useState } from 'react'
-import { HandThumbsDown, HandThumbsDownFill } from 'react-bootstrap-icons';
+import { React, useState } from "react";
+import { HandThumbsDown, HandThumbsDownFill } from "react-bootstrap-icons";
 import { ref, get, child, update } from "firebase/database";
-import { database } from '../firebase.js'; 
+import { database } from "../firebase.js";
 
 export default function Downvote(props) {
-  const [thumbsClicked, setThumbsClicked] = useState(false); 
+  const [thumbsClicked, setThumbsClicked] = useState(false);
   const library = props.library;
   const word = props.word;
-  const descriptors = props.descriptors; 
+  const descriptors = props.descriptors;
   const setDescriptors = props.setDescriptors;
 
   const handleClick = (word) => {
-    if (thumbsClicked){
+    if (thumbsClicked) {
       incrementLikes(word);
     } else {
-      decrementLikes(word); 
+      decrementLikes(word);
     }
 
-    setThumbsClicked(!thumbsClicked); 
-  }
+    setThumbsClicked(!thumbsClicked);
+  };
 
   const decrementLikes = (word) => {
-    get(child(ref(database), `descriptors/${library}/${word}`)).then((snapshot) => {
-      if (snapshot.exists()) {
-        let likes = snapshot.val(); 
+    get(child(ref(database), `descriptors/${library}/${word}`))
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          let likes = snapshot.val();
 
-        let newDescriptors = {...descriptors}
-        
-        newDescriptors[word] = likes-1
+          let newDescriptors = { ...descriptors };
 
-        setDescriptors(newDescriptors); 
+          newDescriptors[word] = likes - 1;
 
-        update(ref(database, `descriptors/${library}`), {
-          [word]: likes-1
-        });
-      } 
-    }).catch((error) => {
-      console.error(error);
-    });
-  }
+          setDescriptors(newDescriptors);
+
+          update(ref(database, `descriptors/${library}`), {
+            [word]: likes - 1,
+          });
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
 
   const incrementLikes = (word) => {
-    get(child(ref(database), `descriptors/${library}/${word}`)).then((snapshot) => {
-      if (snapshot.exists()) {
-        let likes = snapshot.val(); 
+    get(child(ref(database), `descriptors/${library}/${word}`))
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          let likes = snapshot.val();
 
-        let newDescriptors = {...descriptors}
-        
-        newDescriptors[word] = likes+1
+          let newDescriptors = { ...descriptors };
 
-        setDescriptors(newDescriptors); 
+          newDescriptors[word] = likes + 1;
 
-        update(ref(database, `descriptors/${library}`), {
-          [word]: likes+1
-        });
-      } 
-    }).catch((error) => {
-      console.error(error);
-    });
-  }
+          setDescriptors(newDescriptors);
+
+          update(ref(database, `descriptors/${library}`), {
+            [word]: likes + 1,
+          });
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
 
   return (
-      <button onClick={() => handleClick(word)}>{!thumbsClicked ? <HandThumbsDown color="black" /> : < HandThumbsDownFill color="black" />}</button>
-  )
+    <button onClick={() => handleClick(word)}>
+      {!thumbsClicked ? (
+        <HandThumbsDown color="black" />
+      ) : (
+        <HandThumbsDownFill color="black" />
+      )}
+    </button>
+  );
 }
