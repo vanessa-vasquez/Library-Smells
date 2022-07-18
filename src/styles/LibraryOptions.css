@@ -1,45 +1,49 @@
-.select-header{
-    font-family: 'Comic Neue', cursive;
-    margin-top: 30px;
-    margin-bottom: 10px;
+.select-header {
+  font-family: ldf-comic-sans-bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.options{
-    font-family: 'Comic Neue', cursive;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 1px;
-    height: auto;
-    padding: 10px;
+.options {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  width: fit-content;
+  height: auto;
+  padding: 20px;
 }
 
-ul{
-    line-height: 30px;
+ul a {
+  font-family: ldf-comic-sans;
+  color: black;
+  text-decoration: none;
+  line-height: 30px;
 }
 
-ul li:hover{
-    font-weight: bold;
-    cursor: grab;
+ul a:hover {
+  font-family: ldf-comic-sans-bold;
+  color: black;
+  cursor: grab;
 }
 
 /* Medium size screens and bigger */
 @media only screen and (min-width: 768px) {
-    .select-header{
-        font-size: 40px;
-    }
+  .select-header {
+    font-size: 40px;
+  }
 
-    .options{
-        font-size: 20px;
-    }
+  .options {
+    font-size: 20px;
+  }
 }
 
 /* Extra small size screens */
 @media only screen and (max-width: 575px) {
-    .select-header{
-        font-size: 20px;
-    }
+  .select-header {
+    font-size: 20px;
+  }
 
-    .options{
-        font-size: 15px;
-    }
+  .options {
+    font-size: 15px;
+  }
 }

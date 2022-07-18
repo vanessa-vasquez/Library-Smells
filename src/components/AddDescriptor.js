@@ -40,25 +40,24 @@ export default function AddDescriptor(props) {
       data: data,
     })
       .then(function (response) {
-        // on success: handle response
         let feedback = response.data;
 
         let link = feedback["link"]["matches"];
         let personal = feedback["personal"]["matches"];
         let profanity = feedback["profanity"]["matches"];
 
-        if (link.length != 0 || personal.length != 0) {
+        if (link.length !== 0 || personal.length !== 0) {
           return setError(true);
         }
 
-        if (profanity.length != 0) {
+        if (profanity.length !== 0) {
           for (let i = 0; i < profanity.length; i++) {
             let type = profanity[i]["type"];
             let intensity = profanity[i]["intensity"];
 
             if (
-              type != "sexual" &&
-              (intensity == "medium" || intensity == "high")
+              type !== "sexual" &&
+              (intensity === "medium" || intensity === "high")
             ) {
               return setError(true);
             }
@@ -97,9 +96,11 @@ export default function AddDescriptor(props) {
           });
       })
       .catch(function (error) {
-        // handle error
-        if (error.response) console.log(error.response.data);
-        else console.log(error.message);
+        if (error.response) {
+          console.log(error.response.data);
+        } else {
+          console.log(error.message);
+        }
       });
   };
 

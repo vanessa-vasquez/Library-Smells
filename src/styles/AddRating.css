@@ -1,59 +1,58 @@
-#add-rating{
-    font-family: 'Comic Neue', cursive;
-    font-size: 20px;
-    margin-bottom: 40px;
+#add-rating {
+  font-family: ldf-comic-sans;
+  font-size: 20px;
+  margin-bottom: 40px;
 }
 
-#add-rating select{
-    border-color: black;
-    height: 100%;
-    padding-left: 10px;
-    border-radius: 10px;
+#add-rating select {
+  border-color: black;
+  height: 100%;
+  padding-left: 10px;
+  border-radius: 10px;
 }
 
-#add-rating input{
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    border-radius: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    background-color: white;
-    color: black;
+#add-rating input {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: white;
+  color: black;
 }
 
 /* Medium size screens and bigger */
 @media only screen and (min-width: 768px) {
-    #add-rating label{
-        margin-right: 35px;
-    }
-    
-    #add-rating select{
-        margin-right: 10px;
-        width: 120px;
-    }
+  #add-rating label {
+    margin-right: 35px;
+  }
 
-    #add-rating input{
-        float: right;
-    }
-    
+  #add-rating select {
+    margin-right: 10px;
+    width: 120px;
+  }
+
+  #add-rating input {
+    float: right;
+  }
 }
 
 /* Extra small size screens */
 @media only screen and (max-width: 575px) {
-    .form-elements{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .form-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #add-rating label{
-        margin-top: 20px;
-    }
+  #add-rating label {
+    margin-top: 20px;
+  }
 
-    #add-rating select{
-        width: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+  #add-rating select {
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }

@@ -8,7 +8,7 @@ export default function LibraryOptions() {
     <Container>
       <Row>
         <Col md={2}></Col>
-        <Col md={8}>
+        <Col md={8} className="d-flex flex-column align-items-center">
           <div className="select-header text-center">Select a library</div>
           <div className="options">
             <ul>

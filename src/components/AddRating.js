@@ -52,8 +52,6 @@ export default function AddRating(props) {
       .catch((error) => {
         console.error(error);
       });
-
-    console.log("New rating added!");
   };
 
   const calculateAverage = (ratings) => {
@@ -63,7 +61,9 @@ export default function AddRating(props) {
       sum += ratings[i];
     }
 
-    setAvgRating(sum / ratings.length);
+    const avg = (sum / ratings.length).toFixed(1);
+
+    setAvgRating(avg);
   };
 
   return (

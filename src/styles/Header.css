@@ -1,131 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
+
+@font-face {
+  font-family: ldf-comic-sans;
+  src: url("../assets/Ldfcomicsans.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: ldf-comic-sans-bold;
+  src: url("../assets/Ldfcomicsansbold.ttf") format("truetype");
+}
 
 .header {
-    display: flex;
-    justify-content: center;
-    font-family: 'Barriecito', cursive;
+  display: flex;
+  justify-content: center;
+  font-family: "Barriecito", cursive;
 }
 
-.sub-header{
-    display: flex;
-    justify-content: center;
-    font-family: 'Barriecito', cursive;
+.sub-header {
+  display: flex;
+  justify-content: center;
+  font-family: "Barriecito", cursive;
 }
 
-.refresh-header{
-    display: flex;
-    justify-content: center;
-    font-family: 'Barriecito', cursive;
-    font-size: 40px;
+.refresh-header {
+  display: flex;
+  justify-content: center;
+  font-family: "Barriecito", cursive;
+  font-size: 40px;
 }
 
 /* Medium size screens and bigger */
 @media only screen and (min-width: 768px) {
-    .header{
-        font-size: 80px;
-    }
+  .header {
+    font-size: 80px;
+  }
 
-    .sub-header{
-        font-size: 60px;
-    }
+  .sub-header {
+    font-size: 60px;
+  }
 
-    .l {
-        transform: rotate(-20deg);
-        margin-right: 50px;
-    }
+  .l {
+    transform: rotate(-20deg);
+    margin-right: 50px;
+  }
 
-    .i{
-        transform: rotate(5deg);
-        margin-right: 50px;
-    }
+  .i {
+    transform: rotate(5deg);
+    margin-right: 50px;
+  }
 
-    .b{
-        transform: rotate(-5deg);
-        margin-right: 50px;
-    }
+  .b {
+    transform: rotate(-5deg);
+    margin-right: 50px;
+  }
 
-    .r{
-        transform: rotate(-35deg);
-        margin-right: 50px;
-    }
+  .r {
+    transform: rotate(-35deg);
+    margin-right: 50px;
+  }
 
-    .a{
-        transform: rotate(-15deg);
-        margin-right: 50px;
-    }
+  .a {
+    transform: rotate(-15deg);
+    margin-right: 50px;
+  }
 
-    .y{
-        transform: rotate(30deg);
-    }
+  .y {
+    transform: rotate(30deg);
+  }
 
-    .s:first-of-type{
-        transform: rotate(-20deg);
-        margin-right: 50px;
-    }
+  .s:first-of-type {
+    transform: rotate(-20deg);
+    margin-right: 50px;
+  }
 
-    .m{
-        transform: rotate(-20deg);
-        margin-right: 50px;
-    }
+  .m {
+    transform: rotate(-20deg);
+    margin-right: 50px;
+  }
 
-    .e{
-        transform: rotate(30deg);
-        margin-right: 50px;
-    }
+  .e {
+    transform: rotate(30deg);
+    margin-right: 50px;
+  }
 }
 
 /* Extra small size screens */
 @media only screen and (max-width: 575px) {
-    .header{
-        font-size: 40px;
-    }
+  .header {
+    font-size: 40px;
+  }
 
-    .sub-header{
-        font-size: 30px;
-    }
+  .sub-header {
+    font-size: 30px;
+  }
 
-    .l {
-        transform: rotate(-20deg);
-        margin-right: 20px;
-    }
+  .l {
+    transform: rotate(-20deg);
+    margin-right: 20px;
+  }
 
-    .i{
-        transform: rotate(5deg);
-        margin-right: 20px;
-    }
+  .i {
+    transform: rotate(5deg);
+    margin-right: 20px;
+  }
 
-    .b{
-        transform: rotate(-5deg);
-        margin-right: 20px;
-    }
+  .b {
+    transform: rotate(-5deg);
+    margin-right: 20px;
+  }
 
-    .r{
-        transform: rotate(-35deg);
-        margin-right: 20px;
-    }
+  .r {
+    transform: rotate(-35deg);
+    margin-right: 20px;
+  }
 
-    .a{
-        transform: rotate(-15deg);
-        margin-right: 20px;
-    }
+  .a {
+    transform: rotate(-15deg);
+    margin-right: 20px;
+  }
 
-    .y{
-        transform: rotate(30deg);
-    }
+  .y {
+    transform: rotate(30deg);
+  }
 
-    .s:first-of-type{
-        transform: rotate(-20deg);
-        margin-right: 20px;
-    }
+  .s:first-of-type {
+    transform: rotate(-20deg);
+    margin-right: 20px;
+  }
 
-    .m{
-        transform: rotate(-20deg);
-        margin-right: 20px;
-    }
+  .m {
+    transform: rotate(-20deg);
+    margin-right: 20px;
+  }
 
-    .e{
-        transform: rotate(30deg);
-        margin-right: 20px;
-    }
+  .e {
+    transform: rotate(30deg);
+    margin-right: 20px;
+  }
 }

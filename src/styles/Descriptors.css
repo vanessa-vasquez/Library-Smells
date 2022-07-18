@@ -1,64 +1,62 @@
 #descriptor {
-    width: 100%;
+  width: 100%;
 }
 
-#add-descriptor{
-    margin-top: 10px;
-    font-family: 'Comic Neue', cursive;}
-
-.descriptors-header{
-    font-family: 'Comic Neue', cursive;
-    font-size: 20px;
+#add-descriptor {
+  margin-top: 10px;
+  font-family: ldf-comic-sans;
 }
 
-.descriptors-list{
-    font-family: 'Comic Neue', cursive;
-    width: 100%;
-    height: 400px;
-    padding: 10px 20px 10px 20px;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 1px;
-    overflow: scroll;
+.descriptors-header {
+  font-family: ldf-comic-sans;
+  font-size: 20px;
 }
 
-.word{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.descriptors-list {
+  font-family: ldf-comic-sans;
+  width: 100%;
+  height: 400px;
+  padding: 10px 20px 10px 20px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  overflow: scroll;
 }
 
-.thumbs-icons{
-    display: flex;
+.word {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.thumbs-icons button{
-    font-size: 25px;
-    border-style: none;
-    background-color: transparent;
+.thumbs-icons {
+  display: flex;
 }
 
-.thumbs-icons button:hover{
-    transform: scale(1.1);
+.thumbs-icons button {
+  font-size: 25px;
+  border-style: none;
+  background-color: transparent;
+}
+
+.thumbs-icons button:hover {
+  transform: scale(1.1);
 }
 
 /* Medium size screens and bigger */
 @media only screen and (min-width: 768px) {
-    .descriptors-list{
-        font-size: 40px;
-    }
+  .descriptors-list {
+    font-size: 40px;
+  }
 }
 
 /* Extra small size screens */
 @media only screen and (max-width: 575px) {
-    .descriptors-list{
-        font-size: 25px;
-    }
+  .descriptors-list {
+    font-size: 25px;
+  }
 
-    .descriptors-header{
-        text-align: center;
-    }
+  .descriptors-header {
+    text-align: center;
+  }
 }
-
-
-
