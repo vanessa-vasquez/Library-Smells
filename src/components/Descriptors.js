@@ -5,11 +5,7 @@ import { ref, get, child } from "firebase/database";
 import Upvote from "./Upvote";
 import Downvote from "./Downvote";
 
-export default function Descriptors(props) {
-  const library = props.library;
-  const descriptors = props.descriptors;
-  const setDescriptors = props.setDescriptors;
-
+export default function Descriptors({ library, descriptors, setDescriptors }) {
   useEffect(() => {
     renderDescriptors();
   }, []);

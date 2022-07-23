@@ -6,8 +6,7 @@ import AddDescriptor from "./AddDescriptor";
 import ReactionImage from "./ReactionImage";
 import "../styles/Library.css";
 
-export default function Library(props) {
-  const name = props.name;
+export default function Library({ name }) {
   const [avgRating, setAvgRating] = useState(null);
   const [descriptors, setDescriptors] = useState({});
 

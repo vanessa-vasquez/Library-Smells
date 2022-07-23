@@ -23,6 +23,10 @@
   overflow: scroll;
 }
 
+.descriptors-list::-webkit-scrollbar {
+  display: none;
+}
+
 .word {
   display: flex;
   justify-content: space-between;

@@ -3,10 +3,8 @@ import "../styles/AddRating.css";
 import { database } from "../firebase.js";
 import { ref, get, child, update } from "firebase/database";
 
-export default function AddRating(props) {
-  const library = props.name;
+export default function AddRating({ name: library, setAvgRating }) {
   const [rating, setRating] = useState(3);
-  const setAvgRating = props.setAvgRating;
 
   useEffect(() => {
     renderRating();

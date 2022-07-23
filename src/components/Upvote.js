@@ -3,12 +3,8 @@ import { HandThumbsUp, HandThumbsUpFill } from "react-bootstrap-icons";
 import { ref, get, child, update } from "firebase/database";
 import { database } from "../firebase.js";
 
-export default function Upvote(props) {
+export default function Upvote({ library, word, descriptors, setDescriptors }) {
   const [thumbsClicked, setThumbsClicked] = useState(false);
-  const library = props.library;
-  const word = props.word;
-  const descriptors = props.descriptors;
-  const setDescriptors = props.setDescriptors;
 
   const handleClick = (word) => {
     if (thumbsClicked) {
